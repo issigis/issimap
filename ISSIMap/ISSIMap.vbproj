@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3A704F7-42B0-48D7-B695-7F0208562DC1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ISSIMap</RootNamespace>
+    <AssemblyName>ISSIMap</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ISSIMap.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <RegisterForComInterop>true</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ISSIMap.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <RegisterForComInterop>true</RegisterForComInterop>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ESRI.ArcGIS.ADF.Local, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ArcCatalogUI, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ArcMap, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Carto, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.CartoUI, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.CartoX, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.CartoXUI, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Catalog, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.CatalogUI, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Controls, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesFile, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesGDB, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesNetCDF, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesOleDB, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesRaster, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesRasterUI, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Desktop.AddIns">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DisplayUI, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Output, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.OutputExtensions, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.OutputUI, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="ESRI.ArcGIS.ArcCatalogUI" />
+    <Import Include="ESRI.ArcGIS.ArcMap" />
+    <Import Include="ESRI.ArcGIS.ArcMapUI" />
+    <Import Include="ESRI.ArcGIS.Carto" />
+    <Import Include="ESRI.ArcGIS.CartoUI" />
+    <Import Include="ESRI.ArcGIS.CartoX" />
+    <Import Include="ESRI.ArcGIS.Catalog" />
+    <Import Include="ESRI.ArcGIS.CatalogUI" />
+    <Import Include="ESRI.ArcGIS.Controls" />
+    <Import Include="ESRI.ArcGIS.DataSourcesFile" />
+    <Import Include="ESRI.ArcGIS.DataSourcesGDB" />
+    <Import Include="ESRI.ArcGIS.DataSourcesNetCDF" />
+    <Import Include="ESRI.ArcGIS.DataSourcesOleDB" />
+    <Import Include="ESRI.ArcGIS.DataSourcesRaster" />
+    <Import Include="ESRI.ArcGIS.DataSourcesRasterUI" />
+    <Import Include="ESRI.ArcGIS.Desktop.AddIns" />
+    <Import Include="ESRI.ArcGIS.Display" />
+    <Import Include="ESRI.ArcGIS.DisplayUI" />
+    <Import Include="ESRI.ArcGIS.esriSystem" />
+    <Import Include="ESRI.ArcGIS.Framework" />
+    <Import Include="ESRI.ArcGIS.Geometry" />
+    <Import Include="ESRI.ArcGIS.Output" />
+    <Import Include="ESRI.ArcGIS.OutputExtensions" />
+    <Import Include="ESRI.ArcGIS.OutputUI" />
+    <Import Include="ESRI.ArcGIS.SystemUI" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Config.esriaddinx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmISSIMap.Designer.vb">
+      <DependentUpon>FrmISSIMap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmISSIMap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ISSIMapFunctions.vb" />
+    <Compile Include="ISSIMapHelp.vb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmISSIMap.resx">
+      <DependentUpon>FrmISSIMap.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\ISSIMap.tlb" />
+    <None Include="ISSIMapAddIn_2013.snk" />
+    <EmbeddedResource Include="ISSIMapV1p0.pdf" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Resources\Land_Horiz_A.mxd" />
+    <EmbeddedResource Include="Resources\Land_Horiz_B.mxd" />
+    <EmbeddedResource Include="Resources\Land_Vert_A.mxd" />
+    <EmbeddedResource Include="Resources\Land_Vert_B.mxd" />
+    <EmbeddedResource Include="Resources\Land_Horiz_A_noIndex.mxd" />
+    <EmbeddedResource Include="Resources\Land_Horiz_B_noIndex.mxd" />
+    <EmbeddedResource Include="Resources\Land_Vert_A_noIndex.mxd" />
+    <EmbeddedResource Include="Resources\Land_Vert_B_noIndex.mxd" />
+    <EmbeddedResource Include="Resources\Port_Horiz_A.mxd" />
+    <EmbeddedResource Include="Resources\Port_Horiz_A_noIndex.mxd" />
+    <EmbeddedResource Include="Resources\Port_Horiz_B.mxd" />
+    <EmbeddedResource Include="Resources\Port_Horiz_B_noIndex.mxd" />
+    <EmbeddedResource Include="Resources\Port_Vert_A.mxd" />
+    <EmbeddedResource Include="Resources\Port_Vert_A_noIndex.mxd" />
+    <EmbeddedResource Include="Resources\Port_Vert_B.mxd" />
+    <EmbeddedResource Include="Resources\Port_Vert_B_noIndex.mxd" />
+    <EmbeddedResource Include="Resources\Land_Horiz_C.mxd" />
+    <EmbeddedResource Include="Resources\Land_Horiz_C_noIndex.mxd" />
+    <EmbeddedResource Include="Resources\Land_Horiz_D.mxd" />
+    <EmbeddedResource Include="Resources\Land_Horiz_D_noIndex.mxd" />
+    <EmbeddedResource Include="Resources\Land_Vert_C.mxd" />
+    <EmbeddedResource Include="Resources\Land_Vert_C_noIndex.mxd" />
+    <EmbeddedResource Include="Resources\Land_Vert_D.mxd" />
+    <EmbeddedResource Include="Resources\Land_Vert_D_noIndex.mxd" />
+    <EmbeddedResource Include="Resources\Port_Horiz_C.mxd" />
+    <EmbeddedResource Include="Resources\Port_Horiz_C_noIndex.mxd" />
+    <EmbeddedResource Include="Resources\Port_Horiz_D.mxd" />
+    <EmbeddedResource Include="Resources\Port_Horiz_D_noIndex.mxd" />
+    <EmbeddedResource Include="Resources\Port_Vert_C.mxd" />
+    <EmbeddedResource Include="Resources\Port_Vert_C_noIndex.mxd" />
+    <EmbeddedResource Include="Resources\Port_Vert_D.mxd" />
+    <EmbeddedResource Include="Resources\Port_Vert_D_noIndex.mxd" />
+    <EmbeddedResource Include="Resources\Land_Vert_E.mxd" />
+    <EmbeddedResource Include="Resources\Land_Vert_E_noIndex.mxd" />
+    <EmbeddedResource Include="Resources\Port_Horiz_E.mxd" />
+    <EmbeddedResource Include="Resources\Port_Horiz_E_noIndex.mxd" />
+    <EmbeddedResource Include="Resources\Port_Vert_E.mxd" />
+    <EmbeddedResource Include="Resources\Port_Vert_E_noIndex.mxd" />
+    <EmbeddedResource Include="Resources\Land_Horiz_E.mxd" />
+    <EmbeddedResource Include="Resources\Land_Horiz_E_noIndex.mxd" />
+  </ItemGroup>
+  <ItemGroup>
+    <AddInContent Include="Config.esriaddinx">
+      <Generator>ArcGISAddInHostGenerator</Generator>
+      <LastGenOutput>Config.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </AddInContent>
+    <AddInContent Include="Images\ISSIMap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ISSI_Map.vb" />
+    <AddInContent Include="Images\ISSI_Map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="ESRI.ArcGIS.ArcMapUI">
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ISSI_Logo.png" />
+    <EmbeddedResource Include="Resources\ISSIMap.png" />
+    <EmbeddedResource Include="Resources\ISSIMap_A.png" />
+    <EmbeddedResource Include="Resources\ISSIMap_B.png" />
+    <EmbeddedResource Include="Resources\ISSIMap_C.png" />
+    <EmbeddedResource Include="Resources\ISSIMap_D.png" />
+    <EmbeddedResource Include="Resources\ISSIMap_E.png" />
+    <AddInContent Include="Images\ISSIMapHelp.png" />
+    <AddInContent Include="Images\ISSIMapHelp_1.png" />
+    <Content Include="Resources\ISSIMapHelp.bmp" />
+    <Content Include="Resources\Land_Horiz_A.png" />
+    <Content Include="Resources\Land_Horiz_A_noIndex.png" />
+    <Content Include="Resources\Land_Horiz_B.png" />
+    <Content Include="Resources\Land_Horiz_B_noIndex.png" />
+    <Content Include="Resources\Land_Vert_A.png" />
+    <Content Include="Resources\Land_Vert_A_noIndex.png" />
+    <Content Include="Resources\Land_Vert_B.png" />
+    <Content Include="Resources\Land_Vert_B_noIndex.png" />
+    <Content Include="Resources\Port_Horiz_A.png" />
+    <Content Include="Resources\Port_Horiz_A_noIndex.png" />
+    <Content Include="Resources\Port_Horiz_B.png" />
+    <Content Include="Resources\Port_Horiz_B_noIndex.png" />
+    <Content Include="Resources\Port_Vert_A.png" />
+    <Content Include="Resources\Port_Vert_A_noIndex.png" />
+    <Content Include="Resources\Port_Vert_B.png" />
+    <Content Include="Resources\Port_Vert_B_noIndex.png" />
+  </ItemGroup>
+  <PropertyGroup>
+    <ZipFileExtension>esriAddIn</ZipFileExtension>
+    <AddInTargetProduct>Desktop</AddInTargetProduct>
+    <AddInTargetVersion>10.1</AddInTargetVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ISSIMapAddIn_2013.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\ESRI\ESRI.ArcGIS.AddIns.targets" Condition="Exists('$(MSBuildExtensionsPath)\ESRI\ESRI.ArcGIS.AddIns.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  -->
+  <Target Name="AfterBuild">
+    <!-- Gives build warning when add-in targets file is not found. -->
+    <Warning Text="Unable to create .esriAddin; missing ESRI ArcGIS Add-in SDK component(s)." Condition="!Exists('$(MSBuildExtensionsPath)\ESRI\ESRI.ArcGIS.AddIns.targets')" />
+  </Target>
+  <ProjectExtensions>
+    <!-- Default ESRI add-in properties -->
+    <ESRIAddInProperties>
+      <Host>ArcMap</Host>
+    </ESRIAddInProperties>
+  </ProjectExtensions>
+</Project>

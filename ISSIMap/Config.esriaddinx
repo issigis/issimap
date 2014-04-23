@@ -1,0 +1,31 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>ISSIMap</Name>
+  <AddInID>{ae54f133-c42c-4424-9105-b50821dc23cc}</AddInID>
+  <Description>ISSI Custom Mapping Tool</Description>
+  <Version>1.0</Version>
+  <Image>Images\ISSI_Logo.png</Image>
+  <Author>ISSI</Author>
+  <Company>ISSI</Company>
+  <Date>2/26/2014</Date>
+  <Targets>
+    <Target name="Desktop" version="10.1" />
+  </Targets>
+  <AddIn language="CLR4.0" library="ISSIMap.dll" namespace="ISSIMap">
+    <ArcMap>
+      <Commands>
+        <Button id="ISSI_ISSIMap_ISSI_Map" class="ISSI_Map" message="Create a Map using custom templates. Enter Title Date and Map information and select layout from custom templates to create a map." caption="ISSI Map" tip="Data View must be Active." category="ISSI Controls">
+          <Help heading="ISSI Help">See included ISSI Map Help File or contact us at www.issi-gis.com for more information.</Help>
+        </Button>
+        <Button id="ISSI_ISSIMap_ISSIMapHelp" class="ISSIMapHelp" message="Open a pdf file to provide information about the ISSI Map Tools" caption="ISSI Map Help" tip="Open the ISSI Map Help file." category="ISSI Controls" />
+      </Commands>
+      <Toolbars>
+        <Toolbar id="ISSI_ISSIMap_ISSI_MapTools" caption="ISSI Map Tools" showInitially="true">
+          <Items>
+            <Item refID="ISSI_ISSIMap_ISSI_Map" />
+            <Item refID="ISSI_ISSIMap_ISSIMapHelp" separator="true"/>      
+          </Items>
+        </Toolbar>
+      </Toolbars>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>
