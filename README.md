@@ -31,7 +31,6 @@ The ISSI Map Form allows the user to input the following (all elements can be ma
 
 ### Customization
 ISSI can customize this Add-In for you.
-
 Unique Map Templates:
   -	Utilize international and/or custom layout sizes
   -	Add or remove static map elements
@@ -40,9 +39,6 @@ Unique Map Templates:
 
 ### Contact Us
 Integrated Spatial Solutions, Inc.
-
 562.693.2253
-
 info@issi-gis.com
-
 To learn more about ISSI, please visit our website at (www.issi-gis.com)
